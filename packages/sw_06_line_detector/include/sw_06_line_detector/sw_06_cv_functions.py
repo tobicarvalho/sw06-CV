@@ -23,7 +23,7 @@ def bitwise_and(bitwise1, bitwise2):
 	return cv2.bitwise_and(bitwise1, bitwise2)
 
 def getStructuringElement(shape, size):
-	Assuming we always want a ellipse kernel
+	# Assuming we always want a ellipse kernel
 
 	b=int(size[0]/2)
 	a=int(size[1]/2)
