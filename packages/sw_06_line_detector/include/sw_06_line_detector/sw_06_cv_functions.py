@@ -59,8 +59,7 @@ def dilate(bitwise, kernel):
 		bitwise.strides[1],
 		bitwise.strides[0],  # When we move one step in the 3rd dimension, we should move one step in the original data too
 		bitwise.strides[1],
-	    ),
-	    writeable=False,  # totally use this to avoid writing to memory in weird places
+	    )
 	)
 
 	bitwise=(bitwise*kernel).max(axis=(2,3))
